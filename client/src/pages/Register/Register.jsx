@@ -89,7 +89,7 @@ const Register = () => {
 			<h2 className='text-center mt-1'>Register Your Details</h2>
 			<Card className='text-center mt-3 p-3'>
 				<div className='profile_div text_center'>
-					<img src={preview ? preview : `./public/man.jpeg`} alt='' />
+					<img src={preview ? preview : `/man.jpeg`} alt='' />
 				</div>
 			</Card>
 			<Form className='container'>

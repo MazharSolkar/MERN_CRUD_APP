@@ -1,4 +1,3 @@
-import './edit.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -6,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Select from 'react-select';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+import './edit.css';
 
 const Edit = () => {
 	const [inputData, setInputData] = useState({
@@ -85,10 +85,10 @@ const Edit = () => {
 	}, [image]);
 	return (
 		<div className='container'>
-			<h2 className='text-center mt-1'>Register Your Details</h2>
+			<h2 className='text-center mt-1'>Edit Your Details</h2>
 			<Card className='text-center mt-3 p-3'>
 				<div className='profile_div text_center'>
-					<img src={preview ? preview : `./public/man.jpeg`} alt='' />
+					<img src={preview ? preview : `/man.jpeg`} alt='' />
 				</div>
 			</Card>
 			<Form className='container'>
