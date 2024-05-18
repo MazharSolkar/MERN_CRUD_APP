@@ -99,6 +99,7 @@ const Register = () => {
 						<Form.Control
 							type='text'
 							name='fname'
+							value={inputData.fname}
 							placeholder='Enter FirstName'
 							onChange={setInputValue}
 						/>
@@ -109,6 +110,7 @@ const Register = () => {
 						<Form.Control
 							type='text'
 							name='lname'
+							value={inputData.lname}
 							placeholder='Enter LastName'
 							onChange={setInputValue}
 						/>
@@ -119,6 +121,7 @@ const Register = () => {
 						<Form.Control
 							type='email'
 							name='email'
+							value={inputData.email}
 							placeholder='Enter Email'
 							onChange={setInputValue}
 						/>
@@ -129,6 +132,7 @@ const Register = () => {
 						<Form.Control
 							type='text'
 							name='mobile'
+							value={inputData.mobile}
 							placeholder='Enter Mobile Number'
 							onChange={setInputValue}
 						/>
@@ -154,7 +158,11 @@ const Register = () => {
 
 					<Form.Group className='mb-3 col-lg-6' controlId='formBasicEmail'>
 						<Form.Label>Select Your Status</Form.Label>
-						<Select options={options} onChange={setStatusValue} />
+						<Select
+							options={options}
+							value={status}
+							onChange={setStatusValue}
+						/>
 					</Form.Group>
 
 					<Form.Group className='mb-3 col-lg-6' controlId='formBasicEmail'>
@@ -172,6 +180,7 @@ const Register = () => {
 						<Form.Control
 							type='text'
 							name='location'
+							value={inputData.location}
 							placeholder='Enter Your Location'
 							onChange={setInputValue}
 						/>
