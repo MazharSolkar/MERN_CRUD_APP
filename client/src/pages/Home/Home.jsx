@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useNavigate } from 'react-router-dom';
+import { Tables } from '../../components';
 
 const Home = () => {
 	const navigate = useNavigate();
@@ -106,6 +107,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<Tables />
 		</div>
 	);
 };
