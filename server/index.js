@@ -2,15 +2,15 @@ import express from 'express';
 import dbConnect from './db/index.js';
 import 'dotenv/config';
 import { Users } from './models/Users.model.js';
+import { userRouter } from './routes/user.routes.js';
+import cors from 'cors';
 
 const app = express();
 const port = process.env.PORT || 8000;
 
 app.use(express.json());
-
-app.get('/', async (req, res) => {
-	return res.status(201).json({ msg: 'servers started' });
-});
+app.use(cors());
+app.use(userRouter);
 
 dbConnect()
 	.then(() => {
